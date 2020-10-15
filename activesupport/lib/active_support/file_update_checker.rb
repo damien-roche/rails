@@ -150,7 +150,7 @@ module ActiveSupport
       end
 
       def escape(key)
-        key.gsub(",", '\,')
+        key.to_s.gsub(",", '\,')
       end
 
       def compile_ext(array)
